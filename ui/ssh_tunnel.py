@@ -57,7 +57,10 @@ class SSHTunnelThread(QThread):
             print error_message
             self.error.emit(error_message)
             return
-        client.get_transport().window_size = 3 * 1024 * 1024
+
+        transport = client.get_transport()
+        transport.window_size = 3 * 1024 * 1024
+        transport.set_keepalive(2.5 * 60)  # Set keep-alive to two and a half minutes.
 
         print 'Now forwarding port {0:d} to {1:s}:{2:d}...'.format(self.local_port, self.remote_host, self.remote_port)
 
@@ -66,7 +69,7 @@ class SSHTunnelThread(QThread):
                 self.tunnel = forward_tunnel(self.local_port,
                                              self.remote_host,
                                              self.remote_port,
-                                             client.get_transport())
+                                             transport)
             except socket.error, e:
                 self.error.emit(e.strerror)
                 self.server_stopped.emit()

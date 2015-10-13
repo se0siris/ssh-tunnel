@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'S:\dev\Python\SSH Tunnel\ui\mainwindow.ui'
 #
-# Created: Tue Oct 13 12:01:22 2015
+# Created: Tue Oct 13 14:11:59 2015
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -167,6 +167,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.lbl_status)
         self.button_server_enabled = QtGui.QPushButton(self.centralwidget)
         self.button_server_enabled.setCheckable(True)
+        self.button_server_enabled.setAutoDefault(True)
+        self.button_server_enabled.setDefault(True)
+        self.button_server_enabled.setFlat(False)
         self.button_server_enabled.setObjectName(_fromUtf8("button_server_enabled"))
         self.horizontalLayout.addWidget(self.button_server_enabled)
         self.verticalLayout_2.addLayout(self.horizontalLayout)
