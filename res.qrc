@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>ssh_tunnel.svg</file>
+  </qresource>
+</RCC>
