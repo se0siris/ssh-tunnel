@@ -13,7 +13,7 @@ from ui.mainwindow import MainWindow
 import sys
 from ui.message_boxes import message_box_error
 
-VERSION = '1.0 (13/10/2015)'
+VERSION = '1.0.1 (13/10/2015)'
 
 
 def except_hook(exc_type, exc_value, traceback_obj):
