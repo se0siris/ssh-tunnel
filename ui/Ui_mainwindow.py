@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'S:\dev\Python\SSH Tunnel\ui\mainwindow.ui'
 #
-# Created: Tue Oct 13 14:11:59 2015
+# Created: Wed Nov 11 10:05:26 2015
 #      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.grid_layout.addWidget(self.label_3, 1, 1, 1, 1)
         self.sb_local_port = QtGui.QSpinBox(self.frame)
-        self.sb_local_port.setMaximum(9999)
+        self.sb_local_port.setMaximum(99999)
         self.sb_local_port.setObjectName(_fromUtf8("sb_local_port"))
         self.grid_layout.addWidget(self.sb_local_port, 1, 2, 1, 1)
         self.label_10 = QtGui.QLabel(self.frame)
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
         self.label_14.setObjectName(_fromUtf8("label_14"))
         self.grid_layout.addWidget(self.label_14, 10, 1, 1, 1)
         self.sb_remote_port = QtGui.QSpinBox(self.frame)
-        self.sb_remote_port.setMaximum(9999)
+        self.sb_remote_port.setMaximum(99999)
         self.sb_remote_port.setObjectName(_fromUtf8("sb_remote_port"))
         self.grid_layout.addWidget(self.sb_remote_port, 10, 2, 1, 1)
         self.verticalLayout_3.addLayout(self.grid_layout)
